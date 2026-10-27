@@ -60,18 +60,17 @@ function redrawGeometry(){const school=mapStyle==='school';raster.style('display
 function renderSelection(){if(!path)return;selectionPath.attr('d',mapStyle==='simple'&&selected&&['continent','worldpart','river'].includes(selected.kind)?path(selected.geometry):null).attr('class',`selection-path${selected?.kind==='river'?' river':''}`);$('map-status').textContent=selected?selected.name:(mode==='quiz'&&session&&!session.complete?'Найди объект на карте':mapStyle==='school'?'Школьная физическая карта':'Весь мир перед тобой');updateOverlays();}
 function screen(p){return transform.apply(projection(p));}
 function focusObject(o,animate=true){
- if(!projection)return;svg.interrupt();if(mapStyle==='simple')projection.rotate([-o.point[0],0]);redrawGeometry();
- let k;
- if(o.kind==='ocean')k=o.id==='arctic'?1.7:1.25;
- else if(o.kind==='continent'||o.kind==='worldpart'){const b=path.bounds(o.geometry),dx=b[1][0]-b[0][0],dy=b[1][1]-b[0][1];k=Math.max(1.25,Math.min(3.8,.70/Math.max(dx/width,dy/height)));}
- else{const b=path.bounds(o.geometry),span=Math.max((b[1][0]-b[0][0])/width,(b[1][1]-b[0][1])/height);k=o.pointOnly?7:Math.max(3.5,Math.min(14,.55/(span||.08)));if(o.kind==='river')k=Math.min(7,k);}
- if(mapStyle==='school')k=Math.min(11,k);
- const p=objectPoint(o);const t=d3.zoomIdentity.translate(width/2,height*.52).scale(k).translate(-p[0],-p[1]);
+ if(!projection)return;svg.interrupt();if(mapStyle==='simple')projection.rotate([0,0]);redrawGeometry();
+ // Keep the world in view; the selected name stays large at every scale.
+ const k=1.2,p=objectPoint(o);
+ const x=Math.max(width*(1-k),Math.min(0,width/2-k*p[0]));
+ const y=Math.max(height*(1-k),Math.min(0,height*.52-k*p[1]));
+ const t=d3.zoomIdentity.translate(x,y).scale(k);
  if(animate&&!reduceMotion)svg.transition().duration(650).call(zoom.transform,t);else svg.call(zoom.transform,t);
 }
 function home(){svg.interrupt();if(mapStyle==='simple')projection.rotate([0,0]);redrawGeometry();svg.call(zoom.transform,d3.zoomIdentity);keyboard=null;$('keyboard-cursor').hidden=true;}
 function updateOverlays(){if(!projection)return;
- const marker=$('selection-marker');if(selected){const p=objectScreen(selected);marker.hidden=p[0]<10||p[0]>width-10||p[1]<40||p[1]>height-50;marker.style.left=p[0]+'px';marker.style.top=p[1]+'px';$('marker-name').textContent=selected.name;}else marker.hidden=true;
+ const marker=$('selection-marker');if(selected){const p=objectScreen(selected);marker.hidden=p[0]<10||p[0]>width-10||p[1]<40||p[1]>height-50;marker.style.left=p[0]+'px';marker.style.top=p[1]+'px';const name=$('marker-name');name.textContent=selected.name;name.style.maxWidth=Math.min(250,width-48)+'px';const half=name.getBoundingClientRect().width/2;const shift=Math.max(16+half-p[0],Math.min(0,width-16-half-p[0]));name.style.setProperty('--label-shift',shift+'px');name.classList.toggle('below',p[1]<name.getBoundingClientRect().height+80);}else marker.hidden=true;
  const hide=mode==='quiz'&&session&&!session.complete&&!session.answered;
  $('labels-toggle').disabled=hide;
  const labels=hide||!$('labels-toggle').checked||(mapStyle==='school'&&transform.k<2.4)?[]:objects.filter(o=>o.id!==selected?.id&&(['continent','ocean'].includes(o.kind)||transform.k>=3.3));
