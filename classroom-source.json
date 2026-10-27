@@ -131,8 +131,8 @@
       309.6
     ],
     "chukchi": [
-      1982.4,
-      200.8
+      1935,
+      193
     ],
     "labrador": [
       727.1,
@@ -227,8 +227,8 @@
       1423.4
     ],
     "bering": [
-      2018.7,
-      204.2
+      1978,
+      179
     ],
     "nile": [
       1226,
@@ -249,6 +249,114 @@
     "mississippi": [
       472.1,
       475.9
+    ],
+    "europe": [
+      1165.3,
+      409.8
+    ],
+    "asia": [
+      1572.6,
+      462.7
+    ],
+    "america": [
+      484.8,
+      812.7
+    ],
+    "mediterranean": [
+      1143.5,
+      547.1
+    ],
+    "okhotsk": [
+      1879.3,
+      362.7
+    ],
+    "japan-sea": [
+      1854.6,
+      474.6
+    ],
+    "bering-sea": [
+      2030.8,
+      283.8
+    ],
+    "chukchi-sea": [
+      1924,
+      145
+    ],
+    "arabian-sea": [
+      1443.1,
+      744.2
+    ],
+    "great-australian": [
+      1857.9,
+      1204.7
+    ],
+    "hudson": [
+      622.3,
+      284.6
+    ],
+    "persian": [
+      1357.5,
+      628.2
+    ],
+    "tatar": [
+      1834,
+      398
+    ],
+    "mozambique": [
+      1290.8,
+      1024.8
+    ],
+    "greenland": [
+      905.4,
+      200.4
+    ],
+    "borneo": [
+      1795.6,
+      850.8
+    ],
+    "java": [
+      1764.8,
+      925.1
+    ],
+    "sumatra": [
+      1707.8,
+      863
+    ],
+    "sri-lanka": [
+      1572,
+      792
+    ],
+    "kamchatka": [
+      1920.3,
+      315.9
+    ],
+    "maldives": [
+      1510.8,
+      831.6
+    ],
+    "barrier-reef": [
+      2013.1,
+      1036.4
+    ],
+    "mariana-trench": [
+      2009.5,
+      696.3
+    ],
+    "philippine-trench": [
+      1875.9,
+      764.1
+    ],
+    "chile-trench": [
+      552.6,
+      1114.4
+    ],
+    "sunda-trench": [
+      1756.7,
+      943.3
+    ],
+    "peru-trench": [
+      456.1,
+      954.7
     ]
   },
   "source": {
@@ -336,8 +444,42 @@
       "azov",
       "crimea",
       "canaries",
-      "taymyr"
+      "taymyr",
+      "chukchi-sea",
+      "chukchi",
+      "bering",
+      "tatar",
+      "sri-lanka"
     ],
-    "note": "Printed labels and currents remain visible during classroom practice. All 58 atlas labels are independent of the printed poster."
+    "note": "Label positions verified against the supplied classroom poster. Additional corrections align the Chukchi Sea, Chukchi Peninsula and Bering Strait with the two coasts; geographic source coordinates remain unchanged.",
+    "addedSchoolIds": [
+      "europe",
+      "asia",
+      "america",
+      "mediterranean",
+      "okhotsk",
+      "japan-sea",
+      "bering-sea",
+      "chukchi-sea",
+      "arabian-sea",
+      "great-australian",
+      "hudson",
+      "persian",
+      "tatar",
+      "mozambique",
+      "greenland",
+      "borneo",
+      "java",
+      "sumatra",
+      "sri-lanka",
+      "kamchatka",
+      "maldives",
+      "barrier-reef",
+      "mariana-trench",
+      "philippine-trench",
+      "chile-trench",
+      "sunda-trench",
+      "peru-trench"
+    ]
   }
 }

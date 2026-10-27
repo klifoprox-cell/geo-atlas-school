@@ -25,6 +25,11 @@
       "dataset": "ne_50m_rivers_lake_centerlines",
       "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_50m_rivers_lake_centerlines.geojson",
       "sha256": "c72843da4bea66e37e878b097132f5464486ae4d2b483c39784ee670265bb816"
+    },
+    {
+      "dataset": "ne_10m_geography_regions_polys",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_geography_regions_polys.geojson",
+      "sha256": "b7b26e50ea917d3696aec87f932def2bf5f890f5770e441d59c162c6f4c92a77"
     }
   ],
   "pointSources": [
@@ -67,6 +72,86 @@
       ],
       "url": "https://www.marineregions.org/gazetteer.php?p=details&id=24122",
       "label": "Marine Regions · SeaVoX · MRGID 24122"
+    },
+    {
+      "id": "mariana-trench",
+      "name": "Марианская впадина",
+      "point": [
+        147.8034,
+        16.6911
+      ],
+      "url": "https://www.marineregions.org/gazetteer.php?p=details&id=7378",
+      "label": "Marine Regions · GEBCO · MRGID 7378",
+      "bounds": [
+        141.5,
+        11,
+        147.8667,
+        24.5
+      ]
+    },
+    {
+      "id": "philippine-trench",
+      "name": "Филиппинский жёлоб",
+      "point": [
+        126.6791,
+        10.1197
+      ],
+      "url": "https://www.marineregions.org/gazetteer.php?p=details&id=6952",
+      "label": "Marine Regions · GEBCO · MRGID 6952",
+      "bounds": [
+        124.05,
+        4.4667,
+        128.3333,
+        15.3333
+      ]
+    },
+    {
+      "id": "chile-trench",
+      "name": "Чилийский жёлоб",
+      "point": [
+        -71.6757,
+        -25.7821
+      ],
+      "url": "https://www.marineregions.org/gazetteer.php?p=details&id=7587",
+      "label": "Marine Regions · GEBCO · MRGID 7587",
+      "bounds": [
+        -76.2167,
+        -37.6167,
+        -71.3022,
+        -15.8333
+      ]
+    },
+    {
+      "id": "sunda-trench",
+      "name": "Зондский жёлоб",
+      "point": [
+        108.9057,
+        -9.3152
+      ],
+      "url": "https://www.marineregions.org/gazetteer.php?p=details&id=7327",
+      "label": "Marine Regions · GEBCO · MRGID 7327",
+      "bounds": [
+        100,
+        -11.3546,
+        119,
+        -4.5
+      ]
+    },
+    {
+      "id": "peru-trench",
+      "name": "Перуанский жёлоб",
+      "point": [
+        -80.0354,
+        -9.18
+      ],
+      "url": "https://www.marineregions.org/gazetteer.php?p=details&id=25016",
+      "label": "Marine Regions · GEBCO · MRGID 25016",
+      "bounds": [
+        -82,
+        -14.65,
+        -76.6667,
+        -3.1667
+      ]
     }
   ]
 }

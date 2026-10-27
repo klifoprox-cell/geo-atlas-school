@@ -1,0 +1,1181 @@
+{
+  "title": "Номенклатура 6 класса по теме «Мировой океан»",
+  "source": "Печатный список с фотографии, предоставленной пользователем 27.10.2026",
+  "itemCount": 78,
+  "objectCount": 75,
+  "groups": [
+    {
+      "id": "ocean",
+      "title": "Океаны",
+      "ids": [
+        "pacific",
+        "atlantic",
+        "indian",
+        "arctic"
+      ],
+      "items": [
+        {
+          "id": "pacific",
+          "name": "Тихий океан",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "North Pacific Ocean",
+              "South Pacific Ocean"
+            ],
+            "ids": [
+              1159115079,
+              1159115099
+            ]
+          }
+        },
+        {
+          "id": "atlantic",
+          "name": "Атлантический океан",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "North Atlantic Ocean",
+              "South Atlantic Ocean"
+            ],
+            "ids": [
+              1159115057,
+              1159115149
+            ]
+          }
+        },
+        {
+          "id": "indian",
+          "name": "Индийский океан",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "INDIAN OCEAN"
+            ],
+            "ids": [
+              1159115123
+            ]
+          }
+        },
+        {
+          "id": "arctic",
+          "name": "Северный Ледовитый океан",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Arctic Ocean"
+            ],
+            "ids": [
+              1159115017
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "continent",
+      "title": "Материки",
+      "ids": [
+        "eurasia",
+        "africa",
+        "north-america",
+        "south-america",
+        "antarctica",
+        "australia"
+      ],
+      "items": [
+        {
+          "id": "eurasia",
+          "name": "Евразия",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "EUROPE",
+              "ASIA"
+            ],
+            "ids": [
+              1159104597,
+              1159104603
+            ]
+          }
+        },
+        {
+          "id": "africa",
+          "name": "Африка",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "AFRICA"
+            ],
+            "ids": [
+              1159104365
+            ]
+          }
+        },
+        {
+          "id": "north-america",
+          "name": "Северная Америка",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "NORTH AMERICA"
+            ],
+            "ids": [
+              1159104607
+            ]
+          }
+        },
+        {
+          "id": "south-america",
+          "name": "Южная Америка",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "SOUTH AMERICA"
+            ],
+            "ids": [
+              1159104361
+            ]
+          }
+        },
+        {
+          "id": "antarctica",
+          "name": "Антарктида",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "ANTARCTICA"
+            ],
+            "ids": [
+              1159104367
+            ]
+          }
+        },
+        {
+          "id": "australia",
+          "name": "Австралия",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "AUSTRALIA"
+            ],
+            "ids": [
+              1159104363
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "worldpart",
+      "title": "Части света",
+      "ids": [
+        "europe",
+        "asia",
+        "africa",
+        "america",
+        "antarctica",
+        "australia"
+      ],
+      "items": [
+        {
+          "id": "europe",
+          "name": "Европа",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "EUROPE"
+            ],
+            "ids": [
+              1159104603
+            ]
+          }
+        },
+        {
+          "id": "asia",
+          "name": "Азия",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "ASIA"
+            ],
+            "ids": [
+              1159104597
+            ]
+          }
+        },
+        {
+          "id": "africa",
+          "name": "Африка",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "AFRICA"
+            ],
+            "ids": [
+              1159104365
+            ]
+          }
+        },
+        {
+          "id": "america",
+          "name": "Америка",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "NORTH AMERICA",
+              "SOUTH AMERICA"
+            ],
+            "ids": [
+              1159104361,
+              1159104607
+            ]
+          }
+        },
+        {
+          "id": "antarctica",
+          "name": "Антарктида",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "ANTARCTICA"
+            ],
+            "ids": [
+              1159104367
+            ]
+          }
+        },
+        {
+          "id": "australia",
+          "name": "Австралия",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "AUSTRALIA"
+            ],
+            "ids": [
+              1159104363
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sea",
+      "title": "Моря",
+      "ids": [
+        "sargasso",
+        "mediterranean",
+        "marmara",
+        "black",
+        "azov",
+        "white",
+        "baltic",
+        "red",
+        "yellow",
+        "okhotsk",
+        "japan-sea",
+        "bering-sea",
+        "barents",
+        "kara",
+        "chukchi-sea"
+      ],
+      "items": [
+        {
+          "id": "sargasso",
+          "name": "Саргассово море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Sargasso Sea"
+            ],
+            "ids": [
+              1159120667
+            ]
+          }
+        },
+        {
+          "id": "mediterranean",
+          "name": "Средиземное море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Mediterranean Sea"
+            ],
+            "ids": [
+              1159115321
+            ]
+          }
+        },
+        {
+          "id": "marmara",
+          "name": "Мраморное море",
+          "source": {
+            "dataset": "ne_10m_geography_marine_polys",
+            "names": [
+              "Sea of Marmara"
+            ],
+            "ids": [
+              1159119181
+            ]
+          }
+        },
+        {
+          "id": "black",
+          "name": "Чёрное море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Black Sea"
+            ],
+            "ids": [
+              1159115171
+            ]
+          }
+        },
+        {
+          "id": "azov",
+          "name": "Азовское море",
+          "source": {
+            "dataset": "ne_10m_geography_marine_polys",
+            "names": [
+              "Sea of Azov"
+            ],
+            "ids": [
+              1159116409
+            ]
+          }
+        },
+        {
+          "id": "white",
+          "name": "Белое море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "White Sea"
+            ],
+            "ids": [
+              1159116395
+            ]
+          }
+        },
+        {
+          "id": "baltic",
+          "name": "Балтийское море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Baltic Sea"
+            ],
+            "ids": [
+              1159115831
+            ]
+          }
+        },
+        {
+          "id": "red",
+          "name": "Красное море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Red Sea"
+            ],
+            "ids": [
+              1159115521
+            ]
+          }
+        },
+        {
+          "id": "yellow",
+          "name": "Жёлтое море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Yellow Sea"
+            ],
+            "ids": [
+              1159115999
+            ]
+          }
+        },
+        {
+          "id": "okhotsk",
+          "name": "Охотское море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Sea of Okhotsk"
+            ],
+            "ids": [
+              1159115541
+            ]
+          }
+        },
+        {
+          "id": "japan-sea",
+          "name": "Японское море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Sea of Japan"
+            ],
+            "ids": [
+              1159115305
+            ]
+          }
+        },
+        {
+          "id": "bering-sea",
+          "name": "Берингово море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Bering Sea"
+            ],
+            "ids": [
+              1159117319
+            ]
+          }
+        },
+        {
+          "id": "barents",
+          "name": "Баренцево море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Barents Sea"
+            ],
+            "ids": [
+              1159115861
+            ]
+          }
+        },
+        {
+          "id": "kara",
+          "name": "Карское море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Kara Sea"
+            ],
+            "ids": [
+              1159116231
+            ]
+          }
+        },
+        {
+          "id": "chukchi-sea",
+          "name": "Чукотское море",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Chukchi Sea"
+            ],
+            "ids": [
+              1159116037
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gulf",
+      "title": "Заливы",
+      "ids": [
+        "bengal",
+        "mexico",
+        "great-australian",
+        "hudson",
+        "guinea",
+        "aden",
+        "persian",
+        "biscay",
+        "finland",
+        "peter-great"
+      ],
+      "items": [
+        {
+          "id": "bengal",
+          "name": "Бенгальский залив",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Bay of Bengal"
+            ],
+            "ids": [
+              1159115253
+            ]
+          }
+        },
+        {
+          "id": "mexico",
+          "name": "Мексиканский залив",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Gulf of Mexico"
+            ],
+            "ids": [
+              1159115399
+            ]
+          }
+        },
+        {
+          "id": "great-australian",
+          "name": "Большой Австралийский залив",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Great Australian Bight"
+            ],
+            "ids": [
+              1159116315
+            ]
+          }
+        },
+        {
+          "id": "hudson",
+          "name": "Гудзонов залив",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Hudson Bay"
+            ],
+            "ids": [
+              1159115441
+            ]
+          }
+        },
+        {
+          "id": "guinea",
+          "name": "Гвинейский залив",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Gulf of Guinea"
+            ],
+            "ids": [
+              1159115791
+            ]
+          }
+        },
+        {
+          "id": "aden",
+          "name": "Аденский залив",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Gulf of Aden"
+            ],
+            "ids": [
+              1159116333
+            ]
+          }
+        },
+        {
+          "id": "persian",
+          "name": "Персидский залив",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Persian Gulf"
+            ],
+            "ids": [
+              1159115597
+            ]
+          }
+        },
+        {
+          "id": "biscay",
+          "name": "Бискайский залив",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Bay of Biscay"
+            ],
+            "ids": [
+              1159115749
+            ]
+          }
+        },
+        {
+          "id": "finland",
+          "name": "Финский залив",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Gulf of Finland"
+            ],
+            "ids": [
+              1159116517
+            ]
+          }
+        },
+        {
+          "id": "peter-great",
+          "name": "Залив Петра Великого",
+          "source": {
+            "url": "https://www.marineregions.org/gazetteer.php?p=details&id=8918",
+            "label": "Marine Regions · MRGID 8918"
+          }
+        }
+      ]
+    },
+    {
+      "id": "strait",
+      "title": "Проливы",
+      "ids": [
+        "gibraltar",
+        "tatar",
+        "magellan",
+        "bering",
+        "mozambique",
+        "drake"
+      ],
+      "items": [
+        {
+          "id": "gibraltar",
+          "name": "Гибралтарский пролив",
+          "source": {
+            "dataset": "ne_10m_geography_marine_polys",
+            "names": [
+              "Strait of Gibraltar"
+            ],
+            "ids": [
+              1159117067
+            ]
+          }
+        },
+        {
+          "id": "tatar",
+          "name": "Татарский пролив",
+          "source": {
+            "dataset": "ne_10m_geography_marine_polys",
+            "names": [
+              "Tatar Strait"
+            ],
+            "ids": [
+              1159117937
+            ]
+          }
+        },
+        {
+          "id": "magellan",
+          "name": "Магелланов пролив",
+          "source": {
+            "dataset": "ne_10m_geography_marine_polys",
+            "names": [
+              "Estrecho de Magellanes"
+            ],
+            "ids": [
+              1159118553
+            ]
+          }
+        },
+        {
+          "id": "bering",
+          "name": "Берингов пролив",
+          "source": {
+            "url": "https://www.marineregions.org/gazetteer.php?p=details&id=24122",
+            "label": "Marine Regions · SeaVoX · MRGID 24122"
+          }
+        },
+        {
+          "id": "mozambique",
+          "name": "Мозамбикский пролив",
+          "source": {
+            "dataset": "ne_50m_geography_marine_polys",
+            "names": [
+              "Mozambique Channel"
+            ],
+            "ids": [
+              1159115771
+            ]
+          }
+        },
+        {
+          "id": "drake",
+          "name": "Пролив Дрейка",
+          "source": {
+            "url": "https://www.marineregions.org/gazetteer.php?p=details&id=4326",
+            "label": "Marine Regions · MRGID 4326"
+          }
+        }
+      ]
+    },
+    {
+      "id": "island",
+      "title": "Острова",
+      "ids": [
+        "greenland",
+        "madagascar",
+        "sakhalin",
+        "baffin",
+        "new-guinea",
+        "great-britain",
+        "borneo",
+        "java",
+        "sumatra",
+        "tasmania",
+        "sri-lanka"
+      ],
+      "items": [
+        {
+          "id": "greenland",
+          "name": "Гренландия",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "GREENLAND"
+            ],
+            "ids": [
+              1159104263
+            ]
+          }
+        },
+        {
+          "id": "madagascar",
+          "name": "Мадагаскар",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "MADAGASCAR"
+            ],
+            "ids": [
+              1159104265
+            ]
+          }
+        },
+        {
+          "id": "sakhalin",
+          "name": "Сахалин",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "SAKHALIN"
+            ],
+            "ids": [
+              1159103803
+            ]
+          }
+        },
+        {
+          "id": "baffin",
+          "name": "Баффинова Земля",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "BAFFIN ISLAND"
+            ],
+            "ids": [
+              1159103779
+            ]
+          }
+        },
+        {
+          "id": "new-guinea",
+          "name": "Новая Гвинея",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "NEW GUINEA"
+            ],
+            "ids": [
+              1159104121
+            ]
+          }
+        },
+        {
+          "id": "great-britain",
+          "name": "Великобритания",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "GREAT BRITAIN"
+            ],
+            "ids": [
+              1159104133
+            ]
+          }
+        },
+        {
+          "id": "borneo",
+          "name": "Калимантан",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "BORNEO"
+            ],
+            "ids": [
+              1159104125
+            ]
+          }
+        },
+        {
+          "id": "java",
+          "name": "Ява",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "JAVA"
+            ],
+            "ids": [
+              1159103787
+            ]
+          }
+        },
+        {
+          "id": "sumatra",
+          "name": "Суматра",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "SUMATRA"
+            ],
+            "ids": [
+              1159104127
+            ]
+          }
+        },
+        {
+          "id": "tasmania",
+          "name": "Тасмания",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "TASMANIA"
+            ],
+            "ids": [
+              1159104119
+            ]
+          }
+        },
+        {
+          "id": "sri-lanka",
+          "name": "Шри-Ланка",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "SRI LANKA"
+            ],
+            "ids": [
+              1159104117
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "peninsula",
+      "title": "Полуострова",
+      "ids": [
+        "arabia",
+        "scandinavia",
+        "hindustan",
+        "indochina",
+        "labrador",
+        "somali",
+        "taymyr",
+        "kamchatka",
+        "crimea"
+      ],
+      "items": [
+        {
+          "id": "arabia",
+          "name": "Аравийский полуостров",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "ARABIAN PENINSULA"
+            ],
+            "ids": [
+              1159104333
+            ]
+          }
+        },
+        {
+          "id": "scandinavia",
+          "name": "Скандинавский полуостров",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "SCANDINAVIA"
+            ],
+            "ids": [
+              1159104329
+            ]
+          }
+        },
+        {
+          "id": "hindustan",
+          "name": "Полуостров Индостан",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "INDIA"
+            ],
+            "ids": [
+              1159104327
+            ]
+          }
+        },
+        {
+          "id": "indochina",
+          "name": "Полуостров Индокитай",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "INDOCHINA PENINSULA"
+            ],
+            "ids": [
+              1159104331
+            ]
+          }
+        },
+        {
+          "id": "labrador",
+          "name": "Полуостров Лабрадор",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "LABRADOR"
+            ],
+            "ids": [
+              1159103775
+            ]
+          }
+        },
+        {
+          "id": "somali",
+          "name": "Полуостров Сомали",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "SOMALI PENINSULA"
+            ],
+            "ids": [
+              1159104239
+            ]
+          }
+        },
+        {
+          "id": "taymyr",
+          "name": "Полуостров Таймыр",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "TAYMYR PENINSULA"
+            ],
+            "ids": [
+              1159104151
+            ]
+          }
+        },
+        {
+          "id": "kamchatka",
+          "name": "Полуостров Камчатка",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "KAMCHATKA PENINSULA"
+            ],
+            "ids": [
+              1159104155
+            ]
+          }
+        },
+        {
+          "id": "crimea",
+          "name": "Крымский полуостров",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "CRIMEA"
+            ],
+            "ids": [
+              1159103999
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "archipelago",
+      "title": "Архипелаги и риф",
+      "ids": [
+        "maldives",
+        "japan",
+        "barrier-reef",
+        "canaries",
+        "philippines",
+        "marianas"
+      ],
+      "items": [
+        {
+          "id": "maldives",
+          "name": "Мальдивские острова",
+          "source": {
+            "dataset": "ne_10m_geography_regions_polys",
+            "names": [
+              "Maldive Islands"
+            ],
+            "ids": [
+              1159104533
+            ]
+          }
+        },
+        {
+          "id": "japan",
+          "name": "Японские острова",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "JAPAN"
+            ],
+            "ids": [
+              1159104291
+            ]
+          }
+        },
+        {
+          "id": "barrier-reef",
+          "name": "Большой Барьерный риф",
+          "source": {
+            "dataset": "ne_10m_geography_marine_polys",
+            "names": [
+              "Great Barrier Reef"
+            ],
+            "ids": [
+              1159117285,
+              1159117285
+            ]
+          }
+        },
+        {
+          "id": "canaries",
+          "name": "Канарские острова",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "ISLAS CANARIAS"
+            ],
+            "ids": [
+              1159103491
+            ]
+          }
+        },
+        {
+          "id": "philippines",
+          "name": "Филиппинские острова",
+          "source": {
+            "dataset": "ne_50m_geography_regions_polys",
+            "names": [
+              "PHILIPPINES"
+            ],
+            "ids": [
+              1159104289
+            ]
+          }
+        },
+        {
+          "id": "marianas",
+          "name": "Марианские острова",
+          "source": {
+            "url": "https://www.wikidata.org/wiki/Q153732",
+            "label": "Wikidata · Q153732"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trench",
+      "title": "Желоба",
+      "ids": [
+        "mariana-trench",
+        "philippine-trench",
+        "chile-trench",
+        "sunda-trench",
+        "peru-trench"
+      ],
+      "items": [
+        {
+          "id": "mariana-trench",
+          "name": "Марианская впадина",
+          "source": {
+            "url": "https://www.marineregions.org/gazetteer.php?p=details&id=7378",
+            "label": "Marine Regions · GEBCO · MRGID 7378",
+            "bounds": [
+              141.5,
+              11,
+              147.8667,
+              24.5
+            ]
+          }
+        },
+        {
+          "id": "philippine-trench",
+          "name": "Филиппинский жёлоб",
+          "source": {
+            "url": "https://www.marineregions.org/gazetteer.php?p=details&id=6952",
+            "label": "Marine Regions · GEBCO · MRGID 6952",
+            "bounds": [
+              124.05,
+              4.4667,
+              128.3333,
+              15.3333
+            ]
+          }
+        },
+        {
+          "id": "chile-trench",
+          "name": "Чилийский жёлоб",
+          "source": {
+            "url": "https://www.marineregions.org/gazetteer.php?p=details&id=7587",
+            "label": "Marine Regions · GEBCO · MRGID 7587",
+            "bounds": [
+              -76.2167,
+              -37.6167,
+              -71.3022,
+              -15.8333
+            ]
+          }
+        },
+        {
+          "id": "sunda-trench",
+          "name": "Зондский жёлоб",
+          "source": {
+            "url": "https://www.marineregions.org/gazetteer.php?p=details&id=7327",
+            "label": "Marine Regions · GEBCO · MRGID 7327",
+            "bounds": [
+              100,
+              -11.3546,
+              119,
+              -4.5
+            ]
+          }
+        },
+        {
+          "id": "peru-trench",
+          "name": "Перуанский жёлоб",
+          "source": {
+            "url": "https://www.marineregions.org/gazetteer.php?p=details&id=25016",
+            "label": "Marine Regions · GEBCO · MRGID 25016",
+            "bounds": [
+              -82,
+              -14.65,
+              -76.6667,
+              -3.1667
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "В печатном списке четыре океана; Южный океан сохранён как дополнительный объект.",
+    "Африка, Австралия и Антарктида входят и в раздел материков, и в раздел частей света, без дублирования объектов.",
+    "Большой Барьерный риф сохранён в группе школьного листа, а в атласе имеет точный тип «Риф».",
+    "Аравийское море добавлено как дополнительное название из карандашной пометки. Неясные карандашные записи не интерпретированы.",
+    "Чилийский жёлоб — школьное русское употребление для Перуанско-Чилийского / Атакамского жёлоба (MRGID 7587), а не отдельного англоязычного Chile Trench у южной оконечности материка."
+  ]
+}
