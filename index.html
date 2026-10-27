@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#214c40">
+  <meta name="description" content="Русский географический атлас и тренажёр для 6 класса. Найди объект, рассмотри карту и проверь себя.">
+  <title>Мир рядом — твой географический атлас</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="d3.min.js"></script>
+  <script defer src="d3-geo-projection.min.js"></script>
+  <script defer src="atlas-data.js"></script>
+  <script defer src="classroom-map.js"></script>
+  <script defer src="core.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true"><defs>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"/><path d="M12 1v2m0 18v2M1 12h2m18 0h2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v4m0 14v4M1 12h4m14 0h4"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Zm0 0v14"/></symbol>
+</defs></svg>
+<a class="skip-link" href="#map">Перейти к карте</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Мир рядом — на главную"><span class="brand-icon"><svg><use href="#i-compass"/></svg></span><span>мир рядом<span class="brand-caption">ТВОЙ ГЕОГРАФИЧЕСКИЙ АТЛАС</span></span></a>
+  <div class="header-actions"><span class="class-badge">География <span>·</span> 6 класс</span><button class="text-button" id="sources-open"><svg><use href="#i-book"/></svg><span>О карте</span></button></div>
+</header>
+<main>
+  <div class="page-heading"><div><div class="eyebrow"><span></span> ПЛАНЕТА ПОЛНА ОТКРЫТИЙ</div><h1>Куда отправимся сегодня?</h1><p>Исследуй карту, узнавай новое и проверяй себя.</p></div><div class="discovery-stat"><svg><use href="#i-spark"/></svg><div><strong id="opened-count">0 из 58</strong><span>объектов открыто</span></div></div></div>
+  <div class="workspace-top"><div class="mode-tabs" aria-label="Режим атласа"><button id="atlas-tab" class="active" aria-pressed="true"><svg><use href="#i-compass"/></svg>Исследовать</button><button id="quiz-tab" aria-pressed="false"><svg><use href="#i-target"/></svg>Найди на карте</button></div><span class="edition">Твой набор <span class="edition-dot">·</span> <span id="object-count">58</span> объектов</span></div>
+  <div class="atlas-layout" id="workspace">
+    <section class="search-panel panel" id="search-panel" aria-label="Поиск объектов">
+      <label for="search">Найди своё следующее открытие</label>
+      <div class="search-box"><svg><use href="#i-search"/></svg><input id="search" type="search" placeholder="Море, остров, материк…" autocomplete="off" spellcheck="false" aria-controls="results"><kbd aria-hidden="true">/</kbd></div>
+      <div class="filters" id="filters" aria-label="Тип объекта"></div>
+      <div class="list-heading"><span id="results-count" aria-live="polite">Все объекты</span><span>НА КАРТЕ ↗</span></div>
+      <div id="results" class="results"></div>
+    </section>
+    <section class="detail-panel panel" id="detail-panel" aria-live="polite"></section>
+    <section class="quiz-panel panel" id="quiz-panel" hidden aria-label="Задание тренировки"></section>
+    <section class="map-panel" id="map-panel" aria-label="Интерактивная карта мира">
+      <div class="map-top"><div class="map-title"><span class="map-status-dot"></span><span id="map-status">Весь мир перед тобой</span></div><button class="world-button" id="world-button" title="Показать весь мир"><svg><use href="#i-compass"/></svg><span>Весь мир</span></button></div>
+      <div class="map-style-switch" aria-label="Вид карты"><button id="school-map" aria-pressed="true">Как в классе</button><button id="simple-map" aria-pressed="false">Простая</button></div>
+      <div class="map-load-error" id="map-load-error" hidden>Не удалось загрузить подложку. Обнови страницу или выбери простую карту.</div>
+      <div id="map" tabindex="0" role="application" aria-label="Карта мира. Перетаскивай для перемещения. Кнопки плюс и минус меняют масштаб. Стрелки перемещают прицел, Enter выбирает точку."><svg id="map-svg" aria-hidden="true"></svg><div id="selection-marker" hidden><span class="marker-halo"></span><span class="marker-dot"></span><span class="marker-name" id="marker-name"></span></div><div id="click-marker" hidden></div><div id="keyboard-cursor" hidden aria-hidden="true"></div></div>
+      <div class="map-compass" aria-hidden="true"><span>С</span><svg viewBox="0 0 32 48"><path d="m16 4 8 32-8-8-8 8Z" fill="#2c5b4d"/><path d="m16 4 0 24-8 8Z" fill="#8cae9e"/></svg></div>
+      <div class="map-controls"><button id="zoom-in" aria-label="Приблизить карту" title="Приблизить">+</button><button id="zoom-out" aria-label="Отдалить карту" title="Отдалить">−</button></div>
+      <div class="map-bottom"><label class="map-toggle"><input type="checkbox" id="labels-toggle" checked><span id="labels-caption">Метки атласа</span></label><label class="map-toggle"><input type="checkbox" id="grid-toggle" checked><span>Сетка</span></label><a class="map-credit" id="map-credit" href="https://1maps.ru/wp-content/uploads/2022/12/fizik_karta_mira.jpg" target="_blank" rel="noopener">Карта: 1maps.ru · метки: Natural Earth</a></div>
+      <div class="map-instruction" id="map-instruction">Перетаскивай карту · Приближай кнопками или жестами</div>
+    </section>
+  </div>
+  <div class="under-map"><span><span class="small-pin"></span>Найденное название становится крупнее — его легко заметить.</span><span id="storage-status">Прогресс сохраняется на этом устройстве</span></div>
+  <section class="journey-strip"><span class="journey-number">01 — 02</span><p><strong>Сначала исследуй. Потом попробуй без подсказок.</strong><br>Пять мест, одна маленькая экспедиция — и мир становится знакомее.</p><button id="start-bottom" class="text-button">Начать тренировку<svg><use href="#i-arrow"/></svg></button></section>
+</main>
+<footer><span>мир рядом <span class="footer-dot">/</span> Учиться — значит открывать</span><button class="text-button" id="sources-footer">Источники и условности карты ↗</button></footer>
+<dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-heading"><span class="eyebrow">ОБ ЭТОМ АТЛАСЕ</span><button id="sources-close" aria-label="Закрыть">×</button></div><h2 id="sources-title">Карта, которой можно доверять</h2><p>Это первый учебный набор: <strong id="source-count">58 объектов</strong>, все названия и карточки — на русском языке.</p><h3>Откуда география</h3><p>Береговая линия, русла рек и именованные природные области взяты из открытого набора <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>. Суша и реки — масштаб 1:50 млн; области — 1:50 млн и 1:10 млн. Эти данные находятся в общественном достоянии.</p><p>Основная подложка — <a href="https://1maps.ru/wp-content/uploads/2022/12/fizik_karta_mira.jpg" target="_blank" rel="noopener">физическая карта из класса (1maps.ru)</a>, предоставленная пользователем. Оригинал 3601 × 2251 пиксель хранится внутри приложения. Поверх него размещены все 58 подписей атласа. <a href="classroom-source.json" target="_blank">Источник и сведения о совмещении</a>.</p><p>Для Марианских островов использована точка <a href="https://www.wikidata.org/wiki/Q153732" target="_blank" rel="noopener">Wikidata</a>; для залива Петра Великого, Берингова пролива и пролива Дрейка — справочник <a href="https://www.marineregions.org/" target="_blank" rel="noopener">Marine Regions (VLIZ)</a>. Точная ссылка есть в каждой карточке.</p><h3>Что показывает метка</h3><p>Метка помогает найти объект, а не обозначает его границы. У морей, полуостровов и архипелагов выделяется крупная подпись. На школьной подложке выделяется название с меткой; на простой карте у рек также подсвечивается русло. Карта обзорная: мелкие изгибы берегов упрощены.</p><p>Подложка «Как в классе» сохраняет все печатные подписи, рельеф и течения. Во время задания скрыты дополнительные метки атласа; после ответа нужное название появляется крупно. Совмещение с изображением выполнено по опорным точкам и проверено для всех объектов набора; геопривязка обзорная.</p><p>В тренировке для областей проверяется попадание в обобщённый контур Natural Earth с небольшим допуском для нажатия. Для объектов, заданных точкой, проверяется близость к этой точке. Это учебный допуск, а не географическая граница. Саргассово море ограничивают течения; его положение показано условно.</p><h3>Школьные обозначения</h3><p>Шесть материков: Евразия, Африка, Северная Америка, Южная Америка, Австралия, Антарктида. Пять океанов, включая Южный. Политические границы здесь не показаны. Простая карта использует проекцию Equal Earth. Школьная карта сохраняет проекцию исходного изображения.</p><p>Подложку можно переключить: «Как в классе» — подробная физическая карта с рельефом и печатными названиями; «Простая» — обзорная векторная карта. Выбранный вид сохраняется на этом устройстве.</p><p class="source-links"><a href="sources.json" target="_blank">Список слоёв, координаты и контрольные суммы ↗</a><br><a href="THIRD_PARTY.txt" target="_blank">Лицензии и авторы ↗</a><br><a href="https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-physical-labels/" target="_blank" rel="noopener">О точности природных областей ↗</a><br><a href="https://oceanservice.noaa.gov/facts/sargassosea.html" target="_blank" rel="noopener">NOAA: почему у Саргассова моря нет берегов ↗</a></p><p class="privacy-note">Без регистрации и рекламы. Открытые объекты и результаты сохраняются только в браузере. Атлас работает и без интернета, если скачать его целиком.</p></dialog>
+<noscript><p class="fatal-error">Для интерактивной карты включи JavaScript в браузере.</p></noscript>
+</body></html>

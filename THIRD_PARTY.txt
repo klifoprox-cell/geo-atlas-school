@@ -1,0 +1,14 @@
+Natural Earth map data: public domain. Made with Natural Earth.
+https://www.naturalearthdata.com/about/terms-of-use/
+
+Point data: Wikidata (CC0); Marine Regions, Flanders Marine Institute (VLIZ). Specific records and coordinates: sources.json. The atlas attributes each source next to the relevant card.
+
+D3.js v7.9.0
+Copyright 2010-2023 Mike Bostock
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+School physical map image supplied by the user: https://1maps.ru/wp-content/uploads/2022/12/fizik_karta_mira.jpg . Original map rights remain with their respective holders. Stored source and SHA-256: classroom-source.json.
+D3 Geo Projection v4.0.0: ISC license, Copyright 2010-2024 Mike Bostock; permission and disclaimer as above.

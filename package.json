@@ -1,0 +1,7 @@
+{
+  "name": "geo-atlas-school",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Русский географический атлас и тренажёр для 6 класса",
+  "scripts": { "start": "node server.cjs", "test": "node validate.cjs" }
+}

@@ -1,0 +1,72 @@
+{
+  "retrieved": "2026-10-27",
+  "sources": [
+    {
+      "dataset": "ne_50m_land",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_50m_land.geojson",
+      "sha256": "688964a4dde767bb8e8cc5c7e155947bb3f4bc7676917b42b716e280142885ed"
+    },
+    {
+      "dataset": "ne_50m_geography_regions_polys",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_50m_geography_regions_polys.geojson",
+      "sha256": "33396643d8f0eed408e80bf5ca43dcdb7993f790fdc4eadae311660f8b91fe76"
+    },
+    {
+      "dataset": "ne_50m_geography_marine_polys",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_50m_geography_marine_polys.geojson",
+      "sha256": "b79501031b61a995e5557f7ec8605a3de164e1a400d9ca2f0d36e6b59596b668"
+    },
+    {
+      "dataset": "ne_10m_geography_marine_polys",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_geography_marine_polys.geojson",
+      "sha256": "7beddf23af92393331b8413e22518faedb1168aa55f349cd04dd4689da8d3f78"
+    },
+    {
+      "dataset": "ne_50m_rivers_lake_centerlines",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_50m_rivers_lake_centerlines.geojson",
+      "sha256": "c72843da4bea66e37e878b097132f5464486ae4d2b483c39784ee670265bb816"
+    }
+  ],
+  "pointSources": [
+    {
+      "id": "marianas",
+      "name": "Марианские острова",
+      "point": [
+        145.78,
+        16.7
+      ],
+      "url": "https://www.wikidata.org/wiki/Q153732",
+      "label": "Wikidata · Q153732"
+    },
+    {
+      "id": "peter-great",
+      "name": "Залив Петра Великого",
+      "point": [
+        132,
+        42.75
+      ],
+      "url": "https://www.marineregions.org/gazetteer.php?p=details&id=8918",
+      "label": "Marine Regions · MRGID 8918"
+    },
+    {
+      "id": "drake",
+      "name": "Пролив Дрейка",
+      "point": [
+        -64.2883,
+        -59.9181
+      ],
+      "url": "https://www.marineregions.org/gazetteer.php?p=details&id=4326",
+      "label": "Marine Regions · MRGID 4326"
+    },
+    {
+      "id": "bering",
+      "name": "Берингов пролив",
+      "point": [
+        -169.4556,
+        65.1986
+      ],
+      "url": "https://www.marineregions.org/gazetteer.php?p=details&id=24122",
+      "label": "Marine Regions · SeaVoX · MRGID 24122"
+    }
+  ]
+}
